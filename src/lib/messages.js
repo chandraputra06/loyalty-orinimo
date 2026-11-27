@@ -3,7 +3,7 @@ import { cardLink, ORINIMO_WA } from '../config.js';
 import { idr, waLink, fmtPhone } from './format.js';
 
 export const cardMsg = (cu, token, s) =>
-  `Thank you, Kak${cu.nickname ? ' ' + cu.nickname : ''}! Sampai jumpa di order berikutnya.\n\n` +
+  `Thank you, Kak${cu.nickname ? ' ' + cu.nickname : ''}! 🍿☺️ Sampai jumpa di order berikutnya.\n\n` +
   `Ini kartu loyalty Orinimo Kakak:\n${cardLink(token)}\n\n` +
   `Setiap transaksi sebesar ${idr(s.unit)} mendapatkan 1 stamp. Kumpulkan 10 stamp untuk mendapat diskon ${s.pct}%.\n` +
   `Simpan link ini dan jangan bagikan kepada orang lain.\n\n` +
