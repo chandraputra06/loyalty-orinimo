@@ -3,12 +3,12 @@ import { cardLink, ORINIMO_WA } from '../config.js';
 import { idr, waLink, fmtPhone } from './format.js';
 
 export const cardMsg = (cu, token, s) =>
-  `Thankyou kak${cu.nickname ? ' ' + cu.nickname : ''}, see u next order🍿😊\n\n` +
-  `Ini kartu loyalty Orinimo kakak:\n${cardLink(token)}\n\n` +
-  `Setiap ${idr(s.unit)} dalam satu transaksi = 1 stamp. Kumpulkan 10 stamp, dapat diskon ${s.pct}%. ` +
-  `Simpan link ini dan jangan dibagikan ke orang lain ya.\n\n` +
-  `Kalau kakak ingin join ke saluran Orinimo, boleh info ke admin ya.\n\n` +
-  `Kalau ada pertanyaan, bisa hubungi admin Orinimo di WhatsApp ${ORINIMO_WA}.`;
+  `Thank you, Kak${cu.nickname ? ' ' + cu.nickname : ''}! Sampai jumpa di order berikutnya.\n\n` +
+  `Ini kartu loyalty Orinimo Kakak:\n${cardLink(token)}\n\n` +
+  `Setiap transaksi sebesar ${idr(s.unit)} mendapatkan 1 stamp. Kumpulkan 10 stamp untuk mendapat diskon ${s.pct}%.\n` +
+  `Simpan link ini dan jangan bagikan kepada orang lain.\n\n` +
+  `Ingin bergabung ke saluran Orinimo atau ada pertanyaan? Hubungi admin:\n` +
+  `AdminOrinimo: https://wa.me/${ORINIMO_WA}`;
 
 export const activationLink = (actCode) => waLink(ORINIMO_WA, `Halo Orinimo, saya mau aktifkan kartu member. Kode: ${actCode}`);
 export const recoveryLink = (ph) => waLink(ORINIMO_WA, `Halo Orinimo, link kartu member saya hilang. Nomor saya ${fmtPhone(ph)}. Mohon dikirim ulang ya.`);
